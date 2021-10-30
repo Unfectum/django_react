@@ -1,3 +1,12 @@
 .headerWrapper {
-
+ display:block;
+ height: 4rem;
+ background-color: lightgrey;
+ color: black;
+ font-style: italic;
+ position: sticky;
+ top: 0;
 }
+/*header has 2 rem hight, header has lite blue background, 
+button 'Home' is bold, 'Home' color is black (without underscore), 
+header is stuck to the top of page (try to use css position)*/
