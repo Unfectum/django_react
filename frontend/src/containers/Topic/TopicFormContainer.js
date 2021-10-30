@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { topicsAPI } from '../../api/topics';
-import { AddTopic } from '../../components/Topic/AddTopic'
+import { TopicForm } from '../../components/Topic/TopicForm'
 import { useHistory } from 'react-router-dom';
 
 
-export const AddTopicContainer = () => {
+export const TopicFormContainer = () => {
   const [topic, setTopic] = useState({ title: '', description: '' })
   const history = useHistory()
 
@@ -26,6 +26,6 @@ export const AddTopicContainer = () => {
   }
 
   return (
-    <AddTopic topic={topic} handleChange={handleChange} handleSubmit={handleSubmit} />
+    <TopicForm topic={topic} handleChange={handleChange} handleSubmit={handleSubmit} />
   )
 }
