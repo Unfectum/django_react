@@ -1,6 +1,6 @@
 # Getting Started 
 
-##Run this commands to deploy project:
+## Run this commands to deploy project:
 
 1. Install git, python, nodejs.
 2. Open terminal and go to the folder you would like to use and run the following:
@@ -18,6 +18,27 @@
 ### `npm install`
 ### `npm start`
 
+# Branching strategy
+
+1. Each time you started work on your trello task, move it to the column 'doing'.
+2. From `integration` branch create your own branch using pattern: 
+### `[Task number]_[your name]`
+3. Start work on your task, write the code.
+4. After you finished your work, add your changed files to git: 
+### `git add [file name]` 
+    you can use command `git add .` to add all untracked files.
+5. Commit changes using command:
+### `git commit -m "[your commit messege here]"`
+    please add commit messages that clearly describes your changes
+6. Push your changes to GitHub repo using command:
+### `git push`
+    first time you try to push new branch to GitHub you will see message:
+        `fatal: The current branch [branch name] has no upstream branch`
+    plese, use the commnd that git propose you:
+        `git push --set-upstream origin [branch name]`
+7. Go to the GitHub and create new  from branch you just pushed 
+   to branch `integration` and add everyone to reviewers.
+8. Wait until your `Pull Request` will be approved and then merge it.
 ## Available Scripts
 
 In the project directory, you can run:
