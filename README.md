@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Getting Started 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Run this commands to deploy project:
+
+1. Install git, python, nodejs.
+2. Open terminal and go to the folder you would like to use and run the following:
+### `git clone git@github.com:Unfectum/django_react.git`
+### `cd django_react`
+### `python -m venv venv`
+### `cd venv/Scripts`
+### `activate`
+### `cd ../..`
+### `pip install -r my-reqs.txt`
+### `python manage.py migrate`
+### `python manage.py runserver`
+3. Open new terminal window and go to the folder with project. 
+### `cd frontend`
+### `npm install`
+### `npm start`
 
 ## Available Scripts
 
