@@ -3,7 +3,7 @@ import s from './Topic.module.css'
 
 
 export const Topic = (props) => {
-  const {topic} = props
+  const { topic } = props
 
   return (
     <div className={s.topicWrapper}>

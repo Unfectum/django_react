@@ -12,6 +12,6 @@ export const TopicListContainer = () => {
   }, []);
 
   return (
-    <TopicList topicList={topicList}/>
+    <TopicList topicList={topicList} />
   )
 }
