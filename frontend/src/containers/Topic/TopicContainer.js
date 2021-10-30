@@ -39,14 +39,7 @@ export const TopicContainer = () => {
     )
   } else {
     return (
-      <>
-        <TopicForm topic={topic} handleChange={handleTopicChange} />
-        <button onClick={onClick}>
-          Save
-        </button>
-      </>
+      <AddTopic topic={topic} handleChange={handleTopicChange} />
     )
   }
-
-
 }
