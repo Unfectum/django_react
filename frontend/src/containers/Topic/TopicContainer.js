@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { topicsAPI } from '../../api/topics';
 import { useParams } from 'react-router-dom';
 import { Topic } from '../../components/Topic/Topic'
-import { TopicForm } from './../../components/Topic/TopicForm';
+import { TopicForm } from '../../components/Topic/TopicForm';
 
 export const TopicContainer = () => {
 
@@ -39,7 +39,7 @@ export const TopicContainer = () => {
     )
   } else {
     return (
-      <AddTopic topic={topic} handleChange={handleTopicChange} />
+      <TopicForm topic={topic} handleChange={handleTopicChange} />
     )
   }
 }
