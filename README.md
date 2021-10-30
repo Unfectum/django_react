@@ -1,6 +1,6 @@
 # Getting Started 
 
-## Run this commands to deploy project:
+## Do the following to deploy project:
 
 1. Install git, python, nodejs.
 2. Open terminal and go to the folder you would like to use and run the following:
