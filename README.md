@@ -22,7 +22,7 @@
 
 1. Each time you started work on your trello task, move it to the column 'doing'.
 2. From `integration` branch create your own branch using pattern: 
-### `[Task number]_[your name]`
+### `git checkout -b [Task number]_[your name]`
 3. Start work on your task, write the code.
 4. After you finished your work, add your changed files to git: 
 ### `git add [file name]` 
