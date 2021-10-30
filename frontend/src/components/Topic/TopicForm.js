@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-export const AddTopic = (props) => {
-  const {handleSubmit, handleChange, topic} = props
+export const TopicForm = (props) => {
+  const { handleSubmit, handleChange, topic } = props
 
   return (
     <form onSubmit={handleSubmit}>
@@ -14,7 +14,7 @@ export const AddTopic = (props) => {
         Description:
         <input type='text' value={topic.description} name={'description'} onChange={handleChange} />
       </label>
-      <input type='submit' value='Add' />
+      <input type='submit' value='Submit' />
     </form>
   )
 }
