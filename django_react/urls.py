@@ -21,6 +21,8 @@ from forum import views
 
 router = routers.DefaultRouter()
 router.register(r'topics', views.TopicView, 'topic')
+router.register(r'topics/<int:id>', views.TopicView, 'topic')
+
 
 
 urlpatterns = [
