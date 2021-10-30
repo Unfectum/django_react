@@ -2,7 +2,7 @@ import React from 'react';
 
 
 export const AddTopic = (props) => {
-  const {handleSubmit, handleChange, topic} = props
+  const { handleSubmit, handleChange, topic } = props
 
   return (
     <form onSubmit={handleSubmit}>
