@@ -1,12 +1,26 @@
 .headerWrapper {
  display:block;
- height: 4rem;
- background-color: lightgrey;
- color: black;
- font-style: italic;
+ height: 3rem;
+ background-color: white;
+ color: rgb(247, 18, 18);
+ font-weight: bold;
  position: sticky;
  top: 0;
+ margin: auto;
+ padding: 15px;
+ padding-bottom: 0;
+font-size: 30px;
+border-bottom: lime;
 }
-/*header has 2 rem hight, header has lite blue background, 
-button 'Home' is bold, 'Home' color is black (without underscore), 
+.headerWrapper:hover {
+  text-decoration: underline;
+}
+.headerWrapper:visited {
+    text-decoration: none;
+  }
+  .headerWrapper:active {
+    text-decoration: lightgreen;
+  }
+/*header has 4 rem hight, header has lite gray shadow background, 
+'Home' color is black (without underscore), 
 header is stuck to the top of page (try to use css position)*/

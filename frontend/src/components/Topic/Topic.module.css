@@ -1,11 +1,17 @@
 .topicListWrapper {
-
+margin: 50px;
+padding-left: 15px;
+color: black;
+border-collapse: collapse;
+background-color: white;
 }
 
 .topicListItem {
-
+margin: 10px;
+padding: 10px;
+color: black;
 }
-
+/*ІНША СТОРІНКА*/
 .topicWrapper {
 
 }
