@@ -26,9 +26,11 @@ SECRET_KEY = 'django-insecure-js#+)t8a+ngy%x^^*%dzd$&6(m+q6i_x+5oxl4p$aw3jo#_s6n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://macabre-fangs-16381.herokuapp.com','https://deploy-weather-application.herokuapp.com']
+# ALLOWED_HOSTS = ['https://macabre-fangs-16381.herokuapp.com','https://deploy-weather-application.herokuapp.com']
 
+ALLOWED_HOSTS = ['*']
 
+CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -87,10 +89,10 @@ DATABASES = {
 }
 
 
-CORS_ORIGIN_WHITELIST = [
-     'http://localhost:3000',
-     'https://django-react-forum.netlify.app'
-]
+# CORS_ORIGIN_WHITELIST = [
+#      'http://localhost:3000',
+#      'https://django-react-forum.netlify.app'
+# ]
 
 
 # Password validation
