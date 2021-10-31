@@ -8,7 +8,7 @@ export const topicsAPI = {
       url: `/api/topics/`
     })
       .then(response => response.data)
-      .catch(error => console.log(error))
+      .catch(error => {alert('server error'); return []})
   },
   getTopic(id) {
     return axios({

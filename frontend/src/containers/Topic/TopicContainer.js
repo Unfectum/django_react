@@ -39,7 +39,7 @@ export const TopicContainer = () => {
     )
   } else {
     return (
-      <AddTopic topic={topic} handleChange={handleTopicChange} />
+      <TopicForm topic={topic} handleChange={handleTopicChange} />
     )
   }
 }
