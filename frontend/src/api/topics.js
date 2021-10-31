@@ -1,17 +1,17 @@
-import axios from "./instance";
+import {instance} from "./instance";
 
 
 export const topicsAPI = {
   getAllTopics() {
-    return axios({
+    return instance({
       method: 'get',
       url: `/api/topics/`
     })
       .then(response => response.data)
-      .catch(error => {alert('server error'); return []})
+      .catch(error => [])
   },
   getTopic(id) {
-    return axios({
+    return instance({
       method: 'get',
       url: `/api/topics/${id}/`
     })
@@ -19,7 +19,7 @@ export const topicsAPI = {
       .catch(error => console.log(error))
   },
   addTopic(data) {
-    return axios({
+    return instance({
       method: 'post',
       url: `/api/topics/`,
       data
@@ -27,7 +27,7 @@ export const topicsAPI = {
       .catch(error => console.log(error))
   },
   editTopic(id, topicData) {
-    return axios({
+    return instance({
       method: 'put', 
       url: `/api/topics/${id}`,
       data: topicData
