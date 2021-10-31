@@ -7,8 +7,9 @@ export const TopicListItem = (props) => {
   const {topic} = props
 
   return (
-    <div className={s.topicListItem}>
-      <Link to={`/topic/${topic.id}`}>{topic.title}</Link>
-    </div>
+    <Link className={s.topicListItem} to={`/topic/${topic.id}`}>
+      <h1>{topic.title}</h1>
+      <p>{topic.description}</p>
+    </Link>
   )
 }
