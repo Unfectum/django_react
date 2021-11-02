@@ -7,7 +7,7 @@
  top: 0;
  padding: 0px 0px 0px 60px;
  font-size: 50px;
- box-shadow: 5px 3px 5px lightgray;
+ box-shadow: 0 0 6px 2px lightgray;
 }
 a {
   color: black;
