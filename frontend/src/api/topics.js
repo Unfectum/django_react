@@ -1,37 +1,33 @@
-import {instance} from "./instance";
-
+import { instance } from "./instance";
 
 export const topicsAPI = {
   getAllTopics() {
     return instance({
-      method: 'get',
-      url: `/api/topics/`
-    })
-      .then(response => response.data)
-      .catch(error => [])
+      method: "get",
+      url: `/api/topics/`,
+    }).then((response) => response.data);
   },
+
   getTopic(id) {
     return instance({
-      method: 'get',
-      url: `/api/topics/${id}/`
-    })
-      .then(response => response.data)
-      .catch(error => console.log(error))
+      method: "get",
+      url: `/api/topics/${id}/`,
+    }).then((response) => response.data);
   },
+
   addTopic(data) {
     return instance({
-      method: 'post',
+      method: "post",
       url: `/api/topics/`,
-      data
-    })
-      .catch(error => console.log(error))
+      data,
+    });
   },
+
   editTopic(id, topicData) {
     return instance({
-      method: 'put', 
+      method: "put",
       url: `/api/topics/${id}`,
-      data: topicData
-    })
-    .catch(error => console.log(error))
-  }
-}
+      data: topicData,
+    });
+  },
+};
