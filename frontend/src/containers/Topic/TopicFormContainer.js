@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import { topicsAPI } from "../../api/topics";
 import { TopicForm } from "../../components/Topic/TopicForm";
 import { useHistory } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const TopicFormContainer = () => {
   const [topic, setTopic] = useState({ title: "", description: "" });
   const history = useHistory();
-
+  const { t } = useTranslation("buttons");
   const handleChange = (e) => {
     setTopic({ ...topic, [e.target.name]: e.target.value });
   };
@@ -29,6 +30,7 @@ export const TopicFormContainer = () => {
       topic={topic}
       handleChange={handleChange}
       handleSubmit={handleSubmit}
+      t={t}
     />
   );
 };

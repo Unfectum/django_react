@@ -2,7 +2,7 @@ import React from "react";
 import s from "./TopicForm.module.css";
 
 export const TopicForm = (props) => {
-  const { handleSubmit, handleChange, topic } = props;
+  const { handleSubmit, handleChange, topic, t } = props;
 
   return (
     <form className={s.form} onSubmit={handleSubmit}>
@@ -24,7 +24,7 @@ export const TopicForm = (props) => {
           onChange={handleChange}
         />
       </label>
-      <input type="submit" value="Submit" />
+      <input type="submit" value={t("submit")} />
     </form>
   );
 };
