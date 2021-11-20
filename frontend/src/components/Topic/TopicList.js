@@ -11,7 +11,7 @@ export const TopicList = (props) => {
     <div className={s.topicListWrapper}>
       {topicList.map(topic => <TopicListItem key={topic.id} topic={topic}/>)}
       <Link to={`/topic/new`}>
-        Add new topic
+        <p>+</p>
       </Link>
     </div>
   )
