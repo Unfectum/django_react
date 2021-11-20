@@ -3,11 +3,13 @@ import { topicsAPI } from "../../api/topics";
 import { useParams } from "react-router-dom";
 import { Topic } from "../../components/Topic/Topic";
 import { TopicForm } from "../../components/TopicForm/TopicForm";
+import { useTranslation } from "react-i18next";
 
 export const TopicContainer = () => {
   const params = useParams();
   const [topic, setTopic] = useState({ title: "", description: "" });
   const [isEdit, setIsEdit] = useState(false);
+  const { t } = useTranslation("buttons");
 
   useEffect(() => {
     topicsAPI.getTopic(params.topicId).then((topic) => setTopic(topic));
@@ -34,6 +36,6 @@ export const TopicContainer = () => {
       </>
     );
   } else {
-    return <TopicForm topic={topic} handleChange={handleTopicChange} />;
+    return <TopicForm topic={topic} handleChange={handleTopicChange} t={t} />;
   }
 };
