@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { TopicList } from "../../components/Topic/TopicList";
+import { TopicList } from "../../components/TopicList/TopicList";
 import { topicsAPI } from "../../api/topics";
 
 export const TopicListContainer = () => {
@@ -15,5 +15,5 @@ export const TopicListContainer = () => {
       .then((allTopics) => setTopicList(allTopics));
   }, []);
 
-  return <TopicList topicList={topicList} />;
+  return <TopicList topicList={topicList} path={`/topic/new`} label={"New"} />;
 };

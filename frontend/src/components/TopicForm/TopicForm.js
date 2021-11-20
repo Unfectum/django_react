@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./TopicForm.module.css";
+import s from "./TopicForm.module.scss";
 
 export const TopicForm = (props) => {
   const { handleSubmit, handleChange, topic, t } = props;

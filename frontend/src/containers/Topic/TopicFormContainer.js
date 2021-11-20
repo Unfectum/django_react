@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { topicsAPI } from "../../api/topics";
-import { TopicForm } from "../../components/Topic/TopicForm";
+import { TopicForm } from "../../components/TopicForm/TopicForm";
 import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 

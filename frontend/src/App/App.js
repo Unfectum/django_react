@@ -10,8 +10,8 @@ import s from "./App.module.scss";
 export const App = () => {
   return (
     <Router>
+      <Header />
       <div className={s.wrapper}>
-        <Header />
         <Switch>
           <Route path={`/topic/new`}>
             <TopicFormContainer />

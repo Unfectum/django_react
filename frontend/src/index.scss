@@ -5,17 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  //all: initial;
-  //   * {
-  //     all: unset;
-  //   }
+  height: 100vh;
+  background-color: #e4f8fb;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
+  max-width: 64rem;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import s from "./Topic.module.css";
+import s from "./TopicList.module.scss";
 
 export const TopicListItem = (props) => {
   const { topic } = props;

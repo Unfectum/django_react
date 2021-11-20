@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { topicsAPI } from "../../api/topics";
 import { useParams } from "react-router-dom";
 import { Topic } from "../../components/Topic/Topic";
-import { TopicForm } from "../../components/Topic/TopicForm";
+import { TopicForm } from "../../components/TopicForm/TopicForm";
 
 export const TopicContainer = () => {
   const params = useParams();

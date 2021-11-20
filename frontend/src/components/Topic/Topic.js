@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./Topic.module.css";
+import s from "./Topic.module.scss";
 
 export const Topic = (props) => {
   const { topic } = props;
